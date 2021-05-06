@@ -47,7 +47,7 @@ flags: --list, --check, --install, --uninstall, --get, --version, --help
     each time.You can download a custom package as 3 arguments.
     Normally, it is automatically detected that you do not use this argument.
 
-/usr/bin/gmp.sh --get mypackage --tar.gz
+/usr/bin/gmp.sh --get mypackage --pkg.tar.zst
 
 --version: shows version, maintainer and main repository.
 
