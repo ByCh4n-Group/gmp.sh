@@ -61,24 +61,23 @@ checkdepend() {
     [ $(command -v ${1}) ] || { echo "i require ${1} please install it then try again." ; exit 1 ; }
 }
 
-# Check System Base (deb,tar.gz,rpm)
+# Check System Base (deb,pkg.tar.zst,rpm)
 checkbase() {
     if [ -e /etc/debian_version ] ; then
         setbase="deb"
     elif [ -e /etc/arch-release ] ; then
-        setbase="tar.gz"
+        setbase="pkg.tar.zst"
     elif [ -e /etc/redhat-release ] ; then
         setbase="rpm"
     else
-        echo -e " Debian - deb\n Arch - tar.gz\n RedHat - rpm"
+        echo -e " Debian - deb\n Arch - pkg.tar.zst\n RedHat - rpm"
         read -p "i can't understand your distro's language please tell me which distro base you have?:> " im
         case ${im} in
             [dD][eE][bB][iI][aA][nN]|[dD][eE][bB])
                 setbase="deb"
             ;;
-            
-            [aA][rR][cC][hH]|[tT][aA][rR].[gG][zZ])
-                setbase="tar.gz"
+            [aA][rR][cC][hH]|[pP][kK][gG].[tT][aA][rR].[zZ][sS][tT])
+                setbase="pkg.tar.zst"
             ;;
             
             [rR][eE][dD][hH][aA][tT]|[rR][pP][mM])
@@ -166,8 +165,8 @@ case ${1} in
                 [dD][eE][bB]|--[dD][eE][bB])
                     setbase="deb"
                 ;;
-                [tT][aA][rR].[gG][zZ]|--[tT][aA][rR].[gG][zZ])
-                    setbase="tar.gz"
+                [pP][kK][gG].[tT][aA][rR].[zZ][sS][tT]|--[pP][kK][gG].[tT][aA][rR].[zZ][sS][tT])
+                    setbase="pkg.tar.zst"
                 ;;
                 [rR][pP][mM]|--[rR][pP][mM])
                     setbase="rpm"
@@ -223,7 +222,7 @@ case ${1} in
                 deb)
                     apt install ./${1}
                 ;;
-                tar.gz)
+                pkg.tar.zst)
                     pacman -U ./${1}
                 ;;
                 rpm)
@@ -254,7 +253,7 @@ case ${1} in
                 deb)
                     apt remove ${packagenames[${1}]}
                 ;;
-                tar.gz)
+                pkg.tar.zst)
                     pacman -R ${packagenames[${1}]}
                 ;;
                 rpm)
@@ -285,8 +284,8 @@ case ${1} in
                 [dD][eE][bB]|--[dD][eE][bB])
                     setbase="deb"
                 ;;
-                [tT][aA][rR].[gG][zZ]|--[tT][aA][rR].[gG][zZ])
-                    setbase="tar.gz"
+                [pP][kK][gG].[tT][aA][rR].[zZ][sS][tT]|--[pP][kK][gG].[tT][aA][rR].[zZ][sS][tT])
+                    setbase="pkg.tar.zst"
                 ;;
                 [rR][pP][mM]|--[rR][pP][mM])
                     setbase="rpm"
@@ -349,7 +348,7 @@ ${yellow}--get${reset}: It is used with a parameter next to the get argument.
     each time.You can download a custom package as 3 arguments.
     Normally, it is automatically detected that you do not use this argument.
 
-${purple}${0} --get mypackage --tar.gz${reset}
+${purple}${0} --get mypackage --pkg.tar.zst${reset}
 
 ${yellow}--version${reset}: shows version, maintainer and main repository.
 
