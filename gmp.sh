@@ -358,8 +358,8 @@ ${yellow}--help${reset}: this shows the help menu.
 Get My Package is not a package manager, it does not store metadata files,
 it pulls all the data from the config files manually assigned in the git repository
 and asks the package manager to install or remove the retrieved package that is compatible
-with your system. This GMP has super alicorn powers. 
-(also this alicorn emphasizes 'written as boranity but emphasizes the phrase pronounced as boraniti')
+with your system. This GMP has super unicorn powers. 
+(also this unicorn emphasizes 'written as boranity but emphasizes the phrase pronounced as boraniti')
 "
     exit 0
     ;;
