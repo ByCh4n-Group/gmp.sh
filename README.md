@@ -1,5 +1,5 @@
 # Get My Package - gmp.sh (version 1)
-![gmp](https://lh3.googleusercontent.com/proxy/ATXim4MEx1UUUWEr2BbiHTkAeL2nVFgKXBLE6rK1sBr2CG0GCiRTYfrwtDMNo8ktTUPBVzWQwz8jhlIJUCeJqUYzpc6332gckBf3WVKDtH_j4nY)
+![gmp](http://www.pngmart.com/files/11/Blank-Package-PNG-Pic.png)
 <br>
 Get My Package alternative package management script for https://github.com/ByCh4n-Group/bych4n_x86_64_main
 ## how to install
