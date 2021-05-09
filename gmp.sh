@@ -17,7 +17,7 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 ## Local Variables
-maintainer="ByCh4n&LazyPwnt"
+maintainer="ByCh4n&LazyPwny"
 version="1"
 basedir="/tmp/getmypackage"
 
