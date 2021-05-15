@@ -17,7 +17,7 @@ sudo bash ./install.sh -ui
 ```
 ## help argument output
 ```bash
-# ~$ gmp.sh --help
+user@hostname:~$ gmp.sh --help
 flags: --list, --check, --install, --uninstall, --get, --version, --help
 
 --list: This argument is used simply and what it does is bring the 
