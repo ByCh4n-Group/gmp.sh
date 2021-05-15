@@ -61,3 +61,5 @@ with your system. This GMP has super unicorn powers.
 also this unicorn emphasizes:
 <br>
 ![alicorn](https://github.com/ByCh4n-Group/items/raw/main/unicorn.png)
+### License
+[GPL3](https://www.gnu.org/licenses/gpl-3.0)
