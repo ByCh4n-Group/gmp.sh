@@ -22,7 +22,7 @@ version="1"
 basedir="/tmp/getmypackage"
 
 # this link just could be your repo of packages to index.sh file as raw
-indexlink="https://raw.githubusercontent.com/ByCh4n-Group/bych4n_x86_64_debian/main/index.sh"
+indexlink="https://raw.githubusercontent.com/ByCh4n-Group/bych4n_x86_64_main/main/index.sh"
 
 ## Colors
 # Reset
