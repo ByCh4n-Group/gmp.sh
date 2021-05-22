@@ -1,4 +1,4 @@
-# Get My Package - gmp.sh (version 1)
+# Get My Package - gmp.sh (version 1) - CLOSED
 ![gmp](http://www.pngmart.com/files/11/Blank-Package-PNG-Pic.png)
 <br>
 Get My Package alternative package management script for https://github.com/ByCh4n-Group/bych4n_x86_64_main
